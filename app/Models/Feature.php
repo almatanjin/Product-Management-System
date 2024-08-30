@@ -8,6 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Feature extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'product_id',
+        'description'
+    ];
+
     protected $guarded = [];
 
     public function products(){

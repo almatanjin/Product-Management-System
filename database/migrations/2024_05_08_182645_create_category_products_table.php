@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('category_products', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->foreignId('category_id')->constrained();
-            $table->foreignId('product_id')->constrained();
+            $table->foreignId('category_id')->constrained('categories')->onDelete('cascade');
+            $table->foreignId('product_id')->constrained('products')->onDelete('cascade');
             $table->timestamps();
         });
     }
