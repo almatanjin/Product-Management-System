@@ -27,6 +27,16 @@ Docker and Docker Compose installed on your machine.
      ./vendor/bin/sail artisan migrate
      ```
    - Access the application at `http://localhost`
+3. **Setting up the Product Management System for frontend**:
+   - Install Dependent Packages:
+     ```bash
+     npm i
+     ```
+   - Vite run:
+     ```bash
+     npm run dev
+     ```
+   - Access the application at `127.0.0.1`
  
 ## Usage
  
@@ -91,6 +101,19 @@ Docker and Docker Compose installed on your machine.
     - Upload a product image.
     - Select multiple categories.
     - Add multiple features.
+
+## 1. Product Display
+
+- **Creative UI Design**:
+  - Products should be displayed with all relevant details, including categories and features.
+  - Use a creative design approach leveraging **Tailwind UI** to present the product information attractively.
+
+## 2. Edit Feature
+
+- **Editing Capabilities**:
+  - Implement an edit feature allowing users to modify only the product title and image.
+  - Other product details, such as categories and features, will remain unchanged and cannot be edited.
+
 
 ## Contributing
  
